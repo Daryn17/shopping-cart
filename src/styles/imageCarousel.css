@@ -1,0 +1,87 @@
+.custom-carousel .carousel .slide {
+  height: 70vh; /* 70% of the viewport height */
+}
+
+/* For mobile devices */
+/* @media (max-width: 768px) {
+  .custom-carousel .carousel .slide {
+    height: 22vh;
+  }
+} */
+
+.image-size {
+  display: block;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+
+/* CSS for default styles (applicable to all screen sizes) */
+
+/* Mobile Phones (Portrait) */
+@media (max-width: 480px) {
+
+  /* Adjust styles for mobile phones in portrait mode */
+  .custom-carousel .carousel .slide {
+    height: 19vh;
+  }
+}
+
+/* Mobile Phones (Landscape) */
+@media (min-width: 481px) and (max-width: 767px) {
+
+  /* Adjust styles for mobile phones in landscape mode */
+  .title::before {
+    content: 'Mobile Phones (Landscape)';
+  }
+}
+
+/* Small Tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+
+  /* Adjust styles for small tablets */
+  .title::before {
+    content: 'Small Tablets';
+  }
+}
+
+/* Tablets */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  /* Adjust styles for larger tablets and some smaller laptops */
+  .title::before {
+    content: 'Tablets';
+  }
+}
+
+/* Laptops and Desktops */
+@media (min-width: 1200px) and (max-width: 1599px) {
+
+  /* Adjust styles for typical laptop and desktop screen sizes */
+  .title::before {
+    content: 'Laptops and Desktops';
+  }
+}
+
+/* Large Desktops */
+@media (min-width: 1600px) {
+
+  /* Adjust styles for larger desktop screens */
+  .title::before {
+    content: 'Large Desktops';
+  }
+}
+
+/* High-Resolution Displays */
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+
+  /* Adjust styles for high-resolution displays, if needed */
+  body {
+    /* Example: Use higher resolution images */
+  }
+}

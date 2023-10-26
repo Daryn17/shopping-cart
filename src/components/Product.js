@@ -1,33 +1,13 @@
 import { Component } from "react";
-import { useTranslation } from 'react-i18next';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDollarSign, faCentSign } from '@fortawesome/free-solid-svg-icons';
+
+import AddButton from './AddButton'
+import PriceComponent from './PriceComponent'
+
 import '../styles/product.css'
-
-const PriceComponent = ({ amount }) => {
-  const { t } = useTranslation();
-
-  const getCurrencyIcon = (currency) => {
-    switch (currency) {
-      case 'USD':
-        return <FontAwesomeIcon icon={faDollarSign} />;
-      case 'ES':
-        return <FontAwesomeIcon icon={faCentSign} />;
-      default:
-        return null;
-    }
-  };
-
-  return (
-    <span>
-      {getCurrencyIcon(t('currency'))} {amount}
-    </span>
-  );
-}
 
 class Product extends Component {
   render() {
-    const { product } = this.props
+    const { product, addToCart } = this.props
     return (
       <div className='main-container'>
         <img className='image-container'
@@ -39,9 +19,9 @@ class Product extends Component {
         <div className='text-container'>
           <PriceComponent amount={product.price} />
         </div>
-        <button className='btn-info'>
+        <AddButton onClick={() => addToCart(product)}>
           Add to cart
-        </button>
+        </AddButton>
       </div>
     )
   }
