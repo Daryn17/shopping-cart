@@ -1,0 +1,14 @@
+img {
+  width: 25%;
+}
+
+/* CSS for default styles (applicable to all screen sizes) */
+
+/* Mobile Phones (Portrait) */
+@media (max-width: 480px) {
+
+  /* Adjust styles for mobile phones in portrait mode */
+  img {
+    width: 35%;
+  }
+}

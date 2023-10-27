@@ -14,6 +14,9 @@ class App extends Component {
       { id: 1, name: 'Cushion 1', price: 1500, image: '/products/cushion1.png' },
       { id: 2, name: 'Cushion 2', price: 2500, image: '/products/cushion2.png' },
       { id: 3, name: 'Cushion 3', price: 3500, image: '/products/cushion3.png' },
+      { id: 4, name: 'Cushion 4', price: 2000, image: '/products/cushion4.png' },
+      { id: 5, name: 'Cushion 5', price: 2500, image: '/products/cushion5.png' },
+      { id: 6, name: 'Cushion 6', price: 3000, image: '/products/cushion6.png' },
     ],
     imageCarousel: [
       { id: 1, name: 'image 1', src: '/imageCarousel/imageCarousel1.png' },

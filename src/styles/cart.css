@@ -1,0 +1,14 @@
+.cart {
+  background-color: #255252;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.bubbleAlertPosition {
+  position: relative;
+  left: 12px;
+  top: 20px;
+}
