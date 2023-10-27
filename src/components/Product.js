@@ -11,7 +11,7 @@ class Product extends Component {
     return (
       <div className='main-container'>
         <img className='image-container'
-          src={product.image}
+          src={product.src}
           alt={product.name} />
         <h5 className='title-container'>
           {product.name}

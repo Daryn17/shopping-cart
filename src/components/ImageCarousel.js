@@ -6,7 +6,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 
 class ImageCarousel extends Component {
   render() {
-    const { imageCarousel } = this.props
+    const { imagesCarousel } = this.props
     return (
       <Carousel
         className="custom-carousel"
@@ -17,10 +17,10 @@ class ImageCarousel extends Component {
         showArrows={false}
         showStatus={false}
         showThumbs={false}>
-        {imageCarousel.map(image => (
-          <div>
+        {imagesCarousel.map(image => (
+          <div key={image.name}>
             <img className="image-size" src={image.src} alt={image.name} />
-            <p className="legend">{image.name}</p>
+            <p className="legend">Sofia's</p>
           </div>
         ))}
       </Carousel>

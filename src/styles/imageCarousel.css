@@ -1,13 +1,6 @@
 .custom-carousel .carousel .slide {
-  height: 70vh; /* 70% of the viewport height */
+  height: 50vh;
 }
-
-/* For mobile devices */
-/* @media (max-width: 768px) {
-  .custom-carousel .carousel .slide {
-    height: 22vh;
-  }
-} */
 
 .image-size {
   display: block;
