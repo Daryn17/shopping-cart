@@ -49,6 +49,9 @@ class App extends Component {
   }
 
   showCart = () => {
+    if (!this.state.cart.length) {
+      return
+    }
     this.setState({
       isShowCart: !this.state.isShowCart
     })
